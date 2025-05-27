@@ -28,3 +28,10 @@ Kelebihan
 
 Kompatibilitas
 - Termux: SysInfoX dapat dijalankan di Termux, sebuah aplikasi terminal emulator untuk Android.
+
+cara mengoprasikan TL-SysInfoX :
+git clone https://github.com/Twinlion24434/TL-SysInfoX.git
+
+cd TL-SysInfoX
+
+python TL-SysInfoX

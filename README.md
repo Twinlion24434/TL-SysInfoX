@@ -29,29 +29,33 @@ Kelebihan
 Kompatibilitas
 - Termux: SysInfoX dapat dijalankan di Termux, sebuah aplikasi terminal emulator untuk Android.
 
-cara mengoperasikan TL-SysInfoX:
+cara menjalankan TL-SysInfoX:
 
-Langkah 1: 
-Instalasi Git dan Python
+Langkah 1: Instalasi Git dan Python
 
 - pkg install git
 - pkg install python
 
-Langkah 2: 
-Clone Repository TL-SysInfoX
+Langkah 2: Clone Repository TL-SysInfoX
 
 - git clone https://github.com/Twinlion24434/TL-SysInfoX.git
 
-Langkah 3: 
-Masuk ke Direktori TL-SysInfoX
+Langkah 3: Masuk ke Direktori TL-SysInfoX
 
 - cd TL-SysInfoX
 
-Langkah 4: 
-Jalankan TL-SysInfoX
+Langkah 4: Instalasi Modul Pyfiglet
 
-- python TL-SysInfoX
+- pip install pyfiglet
 
-Pastikan Anda menjalankan perintah-perintah tersebut secara berurutan untuk mengoperasikan TL-SysInfoX dengan benar.
+Langkah 5: Jalankan TL-SysInfoX
+
+- python TL-SysInfoX.py
+
+Langkah 6: Pilih Menu
+
+- Masukkan nomor menu yang diinginkan (1-6)
+
+Dengan mengikuti langkah-langkah di atas, Anda dapat menjalankan TL-SysInfoX dengan sempurna. 
 
 

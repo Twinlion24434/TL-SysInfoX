@@ -35,6 +35,7 @@ Langkah 1: Instalasi Git dan Python
 
 - pkg install git
 - pkg install python
+- pkg install iproute2
 
 Langkah 2: Clone Repository TL-SysInfoX
 

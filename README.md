@@ -1,4 +1,4 @@
-TL-Tools SysInfoX
+TL-SysInfoX
 
 Fitur Utama :
 - Informasi Perangkat dan CPU: Menampilkan informasi tentang perangkat Android, termasuk model, versi Android, kernel, serta informasi CPU seperti model, kecepatan, dan arsitektur.

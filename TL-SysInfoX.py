@@ -26,17 +26,30 @@ def tampilkan_info_penyimpanan_termux():
     print("Penyimpanan yang digunakan:", os.popen("du -sh /data/data/com.termux/files").read())
     print("Penyimpanan yang tersedia:", os.popen("df -h /data/data/com.termux/files").read())
 
+def atur_ip_address():
+    interface = input("Masukkan nama interface (contoh: wlan0): ")
+    ip_address = input("Masukkan IP address yang ingin diatur (contoh: 192.168.1.100/24): ")
+    subprocess.run(["ip", "addr", "add", ip_address, "dev", interface])
+
+def memindai_port():
+    host = input("Masukkan host yang ingin dipindai (contoh: 192.168.1.1): ")
+    subprocess.run(["nmap", host])
+
 def atur_jaringan():
-    print("Atur Jaringan:")
-    print("1. Atur IP Address")
-    print("2. Memindai Port")
-    pilihan = input("Pilih menu: ")
-    if pilihan == "1":
-        # Atur IP Address
-        pass
-    elif pilihan == "2":
-        # Memindai Port
-        pass
+    while True:
+        print("Atur Jaringan:")
+        print("1. Atur IP Address")
+        print("2. Memindai Port")
+        print("3. Kembali")
+        pilihan = input("Pilih menu: ")
+        if pilihan == "1":
+            atur_ip_address()
+        elif pilihan == "2":
+            memindai_port()
+        elif pilihan == "3":
+            break
+        else:
+            print("Pilihan tidak valid")
 
 def main():
     tampilkan_logo()
@@ -66,4 +79,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
